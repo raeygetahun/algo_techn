@@ -4,6 +4,8 @@ import { CheckCircle, Users, Code, Award } from "lucide-react"
 import ContactCTA from "@/components/contact-cta"
 import { motion, useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
+import algo_logo from "../../public/image.png"
+import Image from "next/image";
 
 // CountUp component for animating numbers
 function CountUp({ value }: { value: string }) {
@@ -176,8 +178,8 @@ export default function AboutPage() {
       ))}
     </span>
     {/* Logo in the center with hover effect */}
-    <img
-      src="/image.png" // update path if needed
+    <Image
+      src={algo_logo} // update path if needed
       alt="Algonix Logo"
       className="relative z-20 w-20 h-20 object-contain drop-shadow-[0_0_32px_cyan] animate-wowA transition-transform duration-500 group-hover/logo-tile:scale-125 group-hover/logo-tile:rotate-6"
       style={{
