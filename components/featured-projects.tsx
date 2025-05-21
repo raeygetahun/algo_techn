@@ -19,20 +19,20 @@ export default function FeaturedProjects() {
       tags: ["Mobile", "React Native"],
       color: "from-purple-600 to-indigo-600",
     },
-    {
-      title: "EcoSmart Dashboard",
-      description: "An analytics dashboard for a renewable energy company.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Web", "Analytics"],
-      color: "from-cyan-500 to-blue-500",
-    },
-    {
-      title: "RetailFlow System",
-      description: "A comprehensive inventory management system for retail.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Software", "Inventory"],
-      color: "from-pink-500 to-purple-500",
-    },
+    // {
+    //   title: "EcoSmart Dashboard",
+    //   description: "An analytics dashboard for a renewable energy company.",
+    //   image: "/placeholder.svg?height=400&width=600",
+    //   tags: ["Web", "Analytics"],
+    //   color: "from-cyan-500 to-blue-500",
+    // },
+    // {
+    //   title: "RetailFlow System",
+    //   description: "A comprehensive inventory management system for retail.",
+    //   image: "/placeholder.svg?height=400&width=600",
+    //   tags: ["Software", "Inventory"],
+    //   color: "from-pink-500 to-purple-500",
+    // },
   ]
 
   const containerVariants = {
