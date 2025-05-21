@@ -1,17 +1,25 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, Github, ArrowUp } from "lucide-react"
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Github,
+  ArrowUp,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import algo_logo2 from "../public/algonix-logo.png";
 
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   return (
     <footer className="relative border-t border-slate-800 pt-16 pb-8">
@@ -31,7 +39,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-6">
               <div className="relative w-10 h-10">
                 <Image
-                  src="/algonix-logo.png"
+                  src={algo_logo2}
                   alt="Algonix Logo"
                   width={40}
                   height={40}
@@ -41,8 +49,8 @@ export default function Footer() {
               <span className="font-bold text-xl tracking-tight">Algonix</span>
             </Link>
             <p className="text-slate-400 mb-4 max-w-xs">
-              A humble but forward-looking tech outsourcing startup helping businesses build innovative digital
-              solutions.
+              A humble but forward-looking tech outsourcing startup helping
+              businesses build innovative digital solutions.
             </p>
             <div className="flex gap-4">
               {[
@@ -82,7 +90,10 @@ export default function Footer() {
                 "Analytics & Reporting",
               ].map((item, index) => (
                 <li key={index}>
-                  <Link href="/services" className="text-slate-400 hover:text-white transition-colors">
+                  <Link
+                    href="/services"
+                    className="text-slate-400 hover:text-white transition-colors"
+                  >
                     {item}
                   </Link>
                 </li>
@@ -101,7 +112,10 @@ export default function Footer() {
                 { name: "Blog", path: "#" },
               ].map((item, index) => (
                 <li key={index}>
-                  <Link href={item.path} className="text-slate-400 hover:text-white transition-colors">
+                  <Link
+                    href={item.path}
+                    className="text-slate-400 hover:text-white transition-colors"
+                  >
                     {item.name}
                   </Link>
                 </li>
@@ -111,7 +125,9 @@ export default function Footer() {
 
           <div>
             <h3 className="font-bold text-lg mb-4">Subscribe</h3>
-            <p className="text-slate-400 mb-4">Stay updated with our latest news and insights.</p>
+            <p className="text-slate-400 mb-4">
+              Stay updated with our latest news and insights.
+            </p>
             <form className="space-y-2">
               <div className="relative">
                 <input
@@ -128,24 +144,33 @@ export default function Footer() {
                   <ArrowUp className="h-4 w-4 rotate-45" />
                 </button>
               </div>
-              <p className="text-xs text-slate-500">By subscribing, you agree to our Privacy Policy.</p>
+              <p className="text-xs text-slate-500">
+                By subscribing, you agree to our Privacy Policy.
+              </p>
             </form>
           </div>
         </div>
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} Algonix Technologies. All rights reserved.
+            &copy; {new Date().getFullYear()} Algonix Technologies. All rights
+            reserved.
           </p>
           <div className="flex gap-6">
-            {["Privacy Policy", "Terms of Service", "Cookie Policy"].map((item, index) => (
-              <Link key={index} href="#" className="text-sm text-slate-500 hover:text-white transition-colors">
-                {item}
-              </Link>
-            ))}
+            {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(
+              (item, index) => (
+                <Link
+                  key={index}
+                  href="#"
+                  className="text-sm text-slate-500 hover:text-white transition-colors"
+                >
+                  {item}
+                </Link>
+              )
+            )}
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -186,7 +186,7 @@ export default function HeroSection() {
                   <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-600 to-cyan-400 p-0.5">
                     <div className="w-full h-full rounded-full bg-slate-900">
                       <Image
-                        src={`/placeholder.svg?height=32&width=32`}
+                        src={`../public/images/placeholder.svg?height=32&width=32`}
                         alt={`Team member ${i}`}
                         width={32}
                         height={32}
@@ -207,7 +207,7 @@ export default function HeroSection() {
             <div className="relative bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-xl overflow-hidden p-1">
               <div className="aspect-video rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="../public/images/placeholder.svg?height=600&width=800"
                   alt="Algonix Technologies"
                   width={800}
                   height={600}

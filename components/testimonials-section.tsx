@@ -131,7 +131,7 @@ export default function TestimonialsSection() {
                       >
                         <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-purple-500">
                           <Image
-                            src={testimonial.image || "/placeholder.svg"}
+                            src={testimonial.image || "../public/images/placeholder.svg"}
                             alt={testimonial.name}
                             width={48}
                             height={48}
@@ -152,7 +152,7 @@ export default function TestimonialsSection() {
                         transition={{ duration: 0.3 }}
                       >
                         <Image
-                          src={testimonial.logo || "/placeholder.svg"}
+                          src={testimonial.logo || "../public/images/placeholder.svg"}
                           alt={testimonial.company}
                           width={96}
                           height={40}

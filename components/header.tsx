@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import  A_logo  from "../public/image.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,7 +65,7 @@ export default function Header() {
             className="relative w-10 h-10"
           >
             <Image
-              src="/image.png"
+              src={A_logo}
               alt="Algonix Logo"
               width={40}
               height={40}
