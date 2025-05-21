@@ -48,8 +48,8 @@ export default function AboutPage() {
 
   const stats = [
     { icon: <Users className="h-6 w-6" />, value: "12", label: "Team Members" },
-    { icon: <Code className="h-6 w-6" />, value: "50+", label: "Projects Completed" },
-    { icon: <Award className="h-6 w-6" />, value: "95", label: "Client Satisfaction" },
+    { icon: <Code className="h-6 w-6" />, value: "25+", label: "Projects Completed" },
+    { icon: <Award className="h-6 w-6" />, value: "100%", label: "Client Satisfaction" },
   ]
 
   const teamMembers = [
@@ -103,38 +103,111 @@ export default function AboutPage() {
 
         {/* Story Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-br from-purple-600/20 to-cyan-400/20 rounded-xl blur-xl opacity-50"></div>
-            <div className="relative">
-              <div className="aspect-video rounded-lg overflow-hidden bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-8 flex items-center justify-center">
-                <div className="grid grid-cols-3 gap-4 w-full h-full">
-                  {[...Array(9)].map((_, i) => (
-                    <div
-                      key={i}
-                      className={`rounded-lg ${
-                        i === 4
-                          ? "bg-gradient-to-br from-purple-600 to-cyan-400 flex items-center justify-center"
-                          : "bg-gradient-to-br from-slate-800 to-slate-700"
-                      } ${
-                        i === 4
-                          ? "col-span-1 row-span-1"
-                          : i % 3 === 0
-                            ? "col-span-1 row-span-2"
-                            : "col-span-1 row-span-1"
-                      }`}
-                    >
-                      {i === 4 && <span className="text-2xl font-bold">A</span>}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+          <div className="relative group">
+  {/* Outer animated glow */}
+  <div className="absolute -inset-6 rounded-2xl bg-gradient-to-br from-purple-600/40 via-cyan-400/30 to-pink-500/30 blur-2xl opacity-70 animate-pulse z-0"></div>
+  {/* Animated sparkles */}
+  <div className="pointer-events-none absolute inset-0 z-20">
+    {[...Array(12)].map((_, i) => (
+      <span
+        key={i}
+        className={`
+          absolute w-2 h-2 rounded-full bg-cyan-400/80 blur-[2px] opacity-70
+          animate-[floatSparkle_3s_ease-in-out_infinite]
+        `}
+        style={{
+          left: `${10 + Math.random() * 80}%`,
+          top: `${10 + Math.random() * 80}%`,
+          animationDelay: `${i * 0.25}s`,
+        }}
+      />
+    ))}
+    <style>
+      {`
+        @keyframes floatSparkle {
+          0%, 100% { transform: translateY(0) scale(1);}
+          50% { transform: translateY(-12px) scale(1.3);}
+        }
+      `}
+    </style>
+  </div>
+  <div className="relative z-10">
+    <div className="aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-900/90 backdrop-blur-lg border-2 border-cyan-400/30 shadow-[0_0_60px_10px_rgba(165,0,255,0.15)] p-8 flex items-center justify-center">
+      <div className="grid grid-cols-3 gap-5 w-full h-full">
+        {[...Array(9)].map((_, i) => (
+          <div
+            key={i}
+            className={`
+              relative rounded-xl transition-all duration-500
+              ${i === 4
+                ? "bg-gradient-to-br from-purple-500 via-cyan-400 to-pink-400 flex items-center justify-center shadow-[0_0_40px_10px_rgba(165,0,255,0.25)] animate-spin-slow scale-110"
+                : "bg-gradient-to-br from-slate-800 to-slate-700 opacity-80 group-hover:scale-105"}
+              ${i === 4
+                ? "col-span-1 row-span-1"
+                : i % 3 === 0
+                  ? "col-span-1 row-span-2"
+                  : "col-span-1 row-span-1"}
+              ${i !== 4 ? "hover:shadow-[0_0_20px_4px_rgba(0,255,255,0.15)]" : ""}
+            `}
+            style={{
+              animation: i === 4 ? "popCenter 2.5s cubic-bezier(.68,-0.55,.27,1.55) infinite alternate" : undefined,
+            }}
+          >
+            { i === 4 && (
+  <span className="relative flex items-center justify-center w-full h-full select-none group/logo-tile">
+    {/* Glowing animated ring */}
+    <span className="absolute inset-0 flex items-center justify-center z-0 transition-transform duration-500 group-hover/logo-tile:scale-110 group-hover/logo-tile:rotate-12">
+      <span className="block w-20 h-20 rounded-full border-4 border-cyan-400/60 border-dashed animate-spin-fast blur-[2px] opacity-70"></span>
+      <span className="block w-28 h-28 rounded-full bg-gradient-radial from-pink-500/30 via-cyan-400/20 to-transparent animate-pulse-slow absolute"></span>
+    </span>
+    {/* Particle burst */}
+    <span className="absolute inset-0 pointer-events-none z-10">
+      {[...Array(12)].map((_, j) => (
+        <span
+          key={j}
+          className="absolute w-2 h-2 rounded-full bg-cyan-400/80 blur-[2px] opacity-80"
+          style={{
+            left: `${50 + 38 * Math.cos((j / 12) * 2 * Math.PI)}%`,
+            top: `${50 + 38 * Math.sin((j / 12) * 2 * Math.PI)}%`,
+            transform: "translate(-50%, -50%)",
+            animation: `burstMove 2.2s ${(j * 0.13).toFixed(2)}s infinite alternate`,
+          }}
+        />
+      ))}
+    </span>
+    {/* Logo in the center with hover effect */}
+    <img
+      src="/image.png" // update path if needed
+      alt="Algonix Logo"
+      className="relative z-20 w-20 h-20 object-contain drop-shadow-[0_0_32px_cyan] animate-wowA transition-transform duration-500 group-hover/logo-tile:scale-125 group-hover/logo-tile:rotate-6"
+      style={{
+        filter: "brightness(1.3)",
+      }}
+    />
+    <style>
+      {`
+        @keyframes wowA {
+          0%,100% { filter: brightness(1.3) drop-shadow(0 0 32px #06b6d4);}
+          50% { filter: brightness(2) drop-shadow(0 0 64px #ec4899);}
+        }
+        .animate-wowA {
+          animation: wowA 2.2s ease-in-out infinite;
+        }
+      `}
+    </style>
+  </span>
+)}
           </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
 
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold">Our Journey</h2>
             <p className="text-slate-300">
-              Founded in 2020, Algonix Technologies began as a small team of developers with a shared vision: to make
+              Algonix Technologies began as a small team of developers with a shared vision: to make
               cutting-edge technology accessible to businesses of all sizes. What started as a three-person operation
               has now grown into a dynamic team of passionate tech specialists.
             </p>
@@ -186,7 +259,7 @@ export default function AboutPage() {
         </div>
 
         {/* Team Section */}
-        <div className="mb-20">
+        {/* <div className="mb-20">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Meet Our Team</h2>
             <p className="text-slate-300">The talented individuals who bring your ideas to life.</p>
@@ -230,7 +303,7 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </motion.div>
-        </div>
+        </div> */}
 
         {/* Values Section */}
         <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-xl p-8 mb-20">

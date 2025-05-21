@@ -123,13 +123,13 @@ export default function CareersPage() {
               onHoverEnd={() => setIsEmailHovered(false)}
             >
               <motion.a
-                href="mailto:careers@algonix.tech"
+                href="mailto:careers@algonixtechnologies.com"
                 className="text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 flex items-center justify-center gap-2"
                 animate={{ scale: isEmailHovered ? 1.05 : 1 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Send className={`h-5 w-5 ${isEmailHovered ? "text-cyan-400" : "text-purple-400"}`} />
-                careers@algonix.tech
+                careers@algonixtechnologies.com
               </motion.a>
             </motion.div>
 

@@ -180,8 +180,8 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-medium mb-1">Email Us</h4>
                     <p className="text-slate-300 mb-1">For general inquiries:</p>
-                    <a href="mailto:hello@algonix.tech" className="text-cyan-400 hover:underline">
-                      hello@algonix.tech
+                    <a href="mailto:sales@algonixtechnologies.com" className="text-cyan-400 hover:underline">
+                      sales@algonixtechnologies.com
                     </a>
                   </div>
                 </div>
@@ -192,14 +192,15 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Call Us</h4>
-                    <p className="text-slate-300 mb-1">Monday to Friday, 9am-6pm:</p>
+                    <p className="text-slate-300 mb-1">Monday to Sunday, 8am-9pm:</p>
                     <a href="tel:+11234567890" className="text-cyan-400 hover:underline">
-                      +1 (123) 456-7890
+                      🇩🇪 +49 176 68 969 565 <br></br>
+                      🇪🇹 +251 923 901 095
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                {/* <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0">
                     <MapPin className="h-6 w-6 text-purple-400" />
                   </div>
@@ -213,7 +214,7 @@ export default function ContactPage() {
                       San Francisco, CA 94105
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -224,7 +225,7 @@ export default function ContactPage() {
                   {
                     question: "What is your typical project timeline?",
                     answer:
-                      "Project timelines vary based on complexity, but most projects take 4-12 weeks from kickoff to launch.",
+                      "Project timelines vary based on complexity, but most projects take 2-20 weeks from kickoff to launch.",
                   },
                   {
                     question: "Do you work with startups?",

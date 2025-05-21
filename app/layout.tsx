@@ -13,10 +13,9 @@ import PageTransition from "@/components/page-transition"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Algonix Technologies | Tech Outsourcing Startup",
+  title: "Algonix Technologies | Tech Outsourcing Company",
   description:
-    "We're a small team with big capabilities. Algonix Technologies helps startups and growing businesses build innovative digital solutions.",
-    generator: 'v0.dev'
+    "Algonix Technologies helps startups and growing businesses build innovative digital solutions.",
 }
 
 export default function RootLayout({
@@ -26,6 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/image.png" sizes="any" />
+        {/* You can add more favicon types if needed */}
+        {/* <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> */}
+      </head>
       <body
         className={`${inter.className} min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-white overflow-x-hidden`}
       >
