@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
 import algo_logo from "../../public/image.png"
 import Image from "next/image";
+import Stats from "@/components/stats"
 
 // CountUp component for animating numbers
 function CountUp({ value }: { value: string }) {
@@ -233,6 +234,9 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
+        <Stats />
+
 
         {/* Stats Section */}
         <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-xl p-8 mb-20">

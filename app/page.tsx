@@ -4,12 +4,13 @@ import Link from "next/link";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ParticleBackground from "@/components/particle-background";
-import FeaturedProjects from "@/components/featured-projects";
 import ServicePreview from "@/components/service-preview";
 import ScrollAnimation from "@/components/scroll-animation";
 import AnimatedGradientText from "@/components/animated-gradient-text";
 import { motion } from "framer-motion";
 import TestimonialSection from "@/components/testimonial-section";
+import Stats from "@/components/stats";
+import FAQSection from "@/components/faq";
 
 export default function HomePage() {
   const scrollToNext = () => {
@@ -42,7 +43,9 @@ export default function HomePage() {
               </motion.h1>
 
               <p className="text-lg md:text-xl text-slate-300 max-w-xl">
-                Driving innovation through smart, scalable digital solutions—partnering with startups and growing businesses to turn bold ideas into reality.
+                Driving innovation through smart, scalable digital
+                solutions—partnering with startups and growing businesses to
+                turn bold ideas into reality.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -152,8 +155,16 @@ export default App;`}
         <ServicePreview />
       </ScrollAnimation>
 
+      <ScrollAnimation>
+        <Stats />
+      </ScrollAnimation>
+
       <ScrollAnimation delay={0.2}>
         <TestimonialSection />
+      </ScrollAnimation>
+
+      <ScrollAnimation delay={0.25}>
+        <FAQSection />
       </ScrollAnimation>
 
       {/* Featured Projects Section

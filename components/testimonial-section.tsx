@@ -17,12 +17,13 @@ const testimonials = [
     text: "We were struggling to find a tech partner who truly cared about our growth—until we met Algonix. They treated our project like their own and consistently went the extra mile.",
     avatar: "/avatars/john.jpg",
   },
-//   {
-//     name: "Emily Chen",
-//     company: "Startly",
-//     text: "The team at Algonix brought clarity and structure to our chaotic startup phase. Their technical guidance and hands-on approach helped us launch faster and smarter.",
-//     avatar: "/avatars/emily.jpg",
-//   },
+  {
+    name: "Sid",
+    company: "Eaglytics Co",
+    website: "https://eaglytics-co.com/", 
+    text: "The team at Algonix brought clarity and structure to our chaotic startup phase. Their technical guidance and hands-on approach helped us launch faster and smarter.",
+    avatar: "/avatars/emily.jpg",
+  },
 ]
 
 const bgGradients = [
