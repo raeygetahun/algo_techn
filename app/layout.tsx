@@ -27,6 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Algonix Technologies | Tech Outsourcing Company</title>
+        <meta
+          name="description"
+          content="Algonix Technologies helps startups and growing businesses build innovative digital solutions."
+        />
+
         <link rel="icon" href="/_next/static/media/image.6883cbde.png" sizes="any" />
         {/* You can add more favicon types if needed */}
         {/* <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> */}
