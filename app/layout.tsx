@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/algo_techn/_next/static/media/image.6883cbde.png" sizes="any" />
+        <link rel="icon" href="/_next/static/media/image.6883cbde.png" sizes="any" />
         {/* You can add more favicon types if needed */}
         {/* <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> */}
       </head>
