@@ -239,7 +239,7 @@ export default function AboutPage() {
 
 
         {/* Stats Section */}
-        <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-xl p-8 mb-20">
+        {/* <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-xl p-8 mb-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <motion.div
@@ -262,7 +262,7 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Team Section */}
         {/* <div className="mb-20">
