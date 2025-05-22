@@ -13,11 +13,11 @@ import PageTransition from "@/components/page-transition"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: "Algonix Technologies | Tech Outsourcing Company",
-  description:
-    "Algonix Technologies helps startups and growing businesses build innovative digital solutions.",
-}
+// export const metadata: Metadata = {
+//   title: "Algonix Technologies | Tech Outsourcing Company",
+//   description:
+//     "Algonix Technologies helps startups and growing businesses build innovative digital solutions.",
+// }
 
 export default function RootLayout({
   children,
