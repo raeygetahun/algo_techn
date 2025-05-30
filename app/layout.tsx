@@ -10,6 +10,7 @@ import ScrollToTop from "@/components/scroll-to-top"
 import FloatingShapes from "@/components/floating-shapes"
 import CursorGlow from "@/components/cursor-glow"
 import PageTransition from "@/components/page-transition"
+import CookieConsent from "@/components/cookie-consent";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -32,6 +33,17 @@ export default function RootLayout({
           name="description"
           content="Algonix Technologies helps startups and growing businesses build innovative digital solutions."
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-68FXPLWHFW"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-68FXPLWHFW');
+            `,
+          }}
+        />
 
         <link rel="icon" href="/_next/static/media/image.6883cbde.png" sizes="any" />
         {/* You can add more favicon types if needed */}
@@ -49,6 +61,8 @@ export default function RootLayout({
           <PageTransition>{children}</PageTransition>
           <Footer />
         </ThemeProvider>
+
+        <CookieConsent />
       </body>
     </html>
   )
