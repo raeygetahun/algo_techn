@@ -51,7 +51,7 @@ export default function ContactPage() {
           company: "",
           subject: "",
           message: "",
-          address: "RAMTRUCK",
+          address: "Algonix",
         });
       } else {
         setFormStatus("error");
