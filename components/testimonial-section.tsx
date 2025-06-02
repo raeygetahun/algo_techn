@@ -10,13 +10,13 @@ const testimonials = [
     text: "Algonix delivered far beyond our expectations. They understood our vision from day one and translated it into a seamless digital product that our users love.",
     avatar: "/avatars/jane.jpg",
   },
-  {
-    name: "Sandra",
-    company: "Memory Pictures",
-    website: "https://memorypicture.com", 
-    text: "We were struggling to find a tech partner who truly cared about our growth—until we met Algonix. They treated our project like their own and consistently went the extra mile.",
-    avatar: "/avatars/john.jpg",
-  },
+  // {
+  //   name: "Sandra",
+  //   company: "Memory Pictures",
+  //   website: "https://memorypicture.com", 
+  //   text: "We were struggling to find a tech partner who truly cared about our growth—until we met Algonix. They treated our project like their own and consistently went the extra mile.",
+  //   avatar: "/avatars/john.jpg",
+  // },
   {
     name: "Sid",
     company: "Eaglytics Co",
