@@ -24,6 +24,13 @@ const testimonials = [
     text: "The team at Algonix brought clarity and structure to our chaotic startup phase. Their technical guidance and hands-on approach helped us launch faster and smarter.",
     avatar: "/avatars/emily.jpg",
   },
+  {
+    name: "Yonas",
+    company: "Montossorian School",
+    website: "https://montessorianschool.org/", 
+    text: "We were struggling to find a tech partner who truly cared about our growth—until we met Algonix. They treated our project like their own and consistently went the extra mile",
+    avatar: "/avatars/emily.jpg",
+  },
 ]
 
 const bgGradients = [
