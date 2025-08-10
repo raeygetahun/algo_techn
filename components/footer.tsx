@@ -109,7 +109,7 @@ export default function Footer() {
                 { name: "Projects", path: "/projects" },
                 { name: "Careers", path: "/careers" },
                 { name: "Contact", path: "/contact" },
-                { name: "Blog", path: "#" },
+                // { name: "Blog", path: "#" },
               ].map((item, index) => (
                 <li key={index}>
                   <Link
@@ -157,17 +157,19 @@ export default function Footer() {
             reserved.
           </p>
           <div className="flex gap-6">
-            {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(
-              (item, index) => (
-                <Link
-                  key={index}
-                  href="#"
-                  className="text-sm text-slate-500 hover:text-white transition-colors"
-                >
-                  {item}
-                </Link>
-              )
-            )}
+            {[
+              { name: "Privacy Policy", href: "/privacy-policy" },
+              { name: "Terms of Service", href: "/terms-of-service" },
+              { name: "Cookie Policy", href: "/cookie-policy" }
+            ].map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className="text-sm text-slate-500 hover:text-white transition-colors"
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

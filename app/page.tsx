@@ -49,10 +49,12 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-[linear-gradient(120deg,_#6d28d9_0%,_#0891b2_60%,_#155e75_100%)] hover:bg-[linear-gradient(120deg,_#5b21b6_0%,_#0e7490_60%,_#164e63_100%)] text-white border-0 h-12 px-6 text-base shadow-md transition-all duration-200">
-                  Start a Project
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-[linear-gradient(120deg,_#6d28d9_0%,_#0891b2_60%,_#155e75_100%)] hover:bg-[linear-gradient(120deg,_#5b21b6_0%,_#0e7490_60%,_#164e63_100%)] text-white border-0 h-12 px-6 text-base shadow-md transition-all duration-200">
+                    Start a Project
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
 
                 <Link href="/services">
                   <Button

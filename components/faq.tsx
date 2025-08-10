@@ -137,7 +137,7 @@ export default function FaqSection() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="p-6 pt-0 border-t border-slate-800">
+                      <div className="p-6 border-t border-slate-800">
                         <p className="text-slate-300">{faq.answer}</p>
                       </div>
                     </motion.div>
