@@ -47,12 +47,12 @@ export default function Header() {
             initial={{ opacity: 1, scale: 1.3, rotate: -10 }}
             animate={{
               opacity: 1,
-              scale: [1.3, 1.2, 1.3, 1, 1.3],
-              rotate: [0, 10, -10, 10, 0],
+              scale: [1.5, 1.4, 1.5, 1.4, 1.5],
+              rotate: [0, 5, -5, 5, 0],
             }}
             transition={{
-              duration: 2,
-              repeat: Infinity,
+              duration: 4,
+              repeat: 3,
               repeatType: "loop",
               ease: "easeInOut",
             }}
