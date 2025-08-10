@@ -293,10 +293,17 @@ export default function ContactPage() {
                       Monday to Sunday, 8am-9pm:
                     </p>
                     <a
-                      href="tel:+11234567890"
+                      href="tel:+4917668969565"
                       className="text-cyan-400 hover:underline"
                     >
-                      🇩🇪 +49 176 68 969 565 <br></br>
+                      🇩🇪 +49 176 68 969 565 
+                    </a>
+                    <br></br>
+
+                    <a
+                      href="tel:+251923901095"
+                      className="text-cyan-400 hover:underline"
+                    >
                       🇪🇹 +251 923 901 095
                     </a>
                   </div>
